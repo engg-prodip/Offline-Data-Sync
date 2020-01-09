@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlCommon">
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/ic_profile"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/colorHints"
+            android:hint="Full Name"
+            android:textColorHint="@color/colorHints"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_below="@+id/edtName"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_margin="5dp"
+            android:drawablePadding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorHints"
+            android:hint="name@mail.com"
+            android:textColorHint="@color/colorHints"
+            android:padding="3dp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_below="@+id/edtEmail"
+            android:textColorHint="@color/colorHints"
+            android:backgroundTint="@color/colorHints"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:maxLength="11"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="3dp"
+            android:padding="3dp"
+            android:hint="01XXXXXXXXX"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/edtCompanyName"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/edtPhone"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/ic_company"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/colorHints"
+            android:hint="Company Name"
+            android:textColorHint="@color/colorHints"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/edtDesignation"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/edtCompanyName"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/ic_designation"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/colorHints"
+            android:hint="Designation"
+            android:textColorHint="@color/colorHints"
+            android:padding="3dp" />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_below="@+id/edtDesignation"
+            android:textColorHint="@color/colorHints"
+            android:drawableLeft="@drawable/ic_password"
+            android:backgroundTint="@color/colorHints"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/edtRepassword"
+            android:layout_below="@+id/edtPassword"
+            android:textColorHint="@color/colorHints"
+            android:backgroundTint="@color/colorHints"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"/>
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:layout_width="0px"
+            android:layout_height="0px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegDone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lylog">
+        <TextView
+            android:id="@+id/btnRegBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center|bottom"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:text="Have an Account? Login Here"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+</LinearLayout>
